@@ -35,9 +35,13 @@ class TicTacToe:
 
     def enable_raw_mode(self):
         self.old_settings = termios.tcgetattr(self.fd)
-        tty.setraw(self.fd)
+        tty.setcbreak(self.fd)
+        sys.stdout.write("\033[?25l")
+        sys.stdout.flush()
 
     def disable_raw_mode(self):
+        sys.stdout.write("\033[?25h")
+        sys.stdout.flush()
         if self.old_settings:
             termios.tcsetattr(self.fd, termios.TCSADRAIN, self.old_settings)
 
