@@ -2,8 +2,6 @@
 
 A modern command-line implementation of the classic Tic-Tac-Toe game written in Python. The project requires no external dependencies and features keyboard-based navigation, ANSI color support, and multiple AI difficulty levels.
 
----
-
 ## Features
 
 * Keyboard-based controls using Arrow Keys or WASD.
@@ -18,30 +16,59 @@ A modern command-line implementation of the classic Tic-Tac-Toe game written in 
 * Graceful terminal cleanup and Ctrl+C handling.
 * No third-party libraries required.
 
----
-
 ## Requirements
 
 * Python 3.x
-* Linux terminal with ANSI color support
+* Git
 
----
+Verify that both are installed:
+
+```bash
+python3 --version
+git --version
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/kvxrlixd/tic-tac-toe.git
+```
+
+Enter the project directory:
+
+```bash
+cd tic-tac-toe
+```
+
+Make the script executable (if needed):
+
+```bash
+chmod +x game.py
+```
 
 ## Running the Game
 
-Navigate to the project directory and run:
+Start the game with:
 
 ```bash
 ./game.py
 ```
 
-Alternatively:
+Or run it with Python:
 
 ```bash
 python3 game.py
 ```
 
----
+## Controls
+
+| Key               | Action      |
+| ----------------- | ----------- |
+| Arrow Keys / WASD | Move cursor |
+| Enter / Space     | Place mark  |
+| Ctrl+C            | Exit game   |
 
 ## Project Structure
 
@@ -53,7 +80,9 @@ tic-tac-toe/
 └── LICENSE
 ```
 
----
+## Repository
+
+https://github.com/kvxrlixd/tic-tac-toe
 
 ## License
 
